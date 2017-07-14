@@ -6,3 +6,7 @@ body {
   background-color: #e8edf3;
   color: #22264b;
 }
+
+.confirmProduct {
+  display: none;
+}

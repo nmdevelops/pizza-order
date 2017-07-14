@@ -23,7 +23,7 @@
               <!-- PIZZA SIZE -->
               <div class="form-group">
                 <label for="pieSize"><h3>Pie Size</h3></label>
-                <select class="form-control" name="pieSize">
+                <select id="pieSize" class="form-control">
                   <option value="10">Small (10" Pizza)</option>
                   <option value="12">Medium (12" Pizza)</option>
                   <option value="14">Large (14" Pizza)</option>
@@ -34,11 +34,11 @@
               <!-- CRUST TYPE -->
               <div class="form-group">
                 <label for="crustType"><h3>Crust</h3></label>
-                <select class="form-control">
-                  <option value="1">Thin Crust</option>
-                  <option value="2">Pan Crust</option>
-                  <option value="3">Deep Dish</option>
-                  <option value="4">Stuffed Crust</option>
+                <select id="pieCrust" class="form-control">
+                  <option value="Thin Crust">Thin Crust</option>
+                  <option value="Pan Crust">Pan Crust</option>
+                  <option value="Deep Dish">Deep Dish</option>
+                  <option value="Stuffed Crust">Stuffed Crust</option>
                 </select>
               </div>
             </div>
@@ -46,10 +46,10 @@
               <!-- SAUCE -->
               <div class="form-group">
                 <label for="sauce"><h3>Sauce</h3></label>
-                <select class="form-control">
-                  <option value="1">Marinara</option>
-                  <option value="2">Alfredo</option>
-                  <option value="3">Pesto</option>
+                <select id="pieSauce" class="form-control">
+                  <option value="Marinara">Marinara</option>
+                  <option value="Alfredo">Alfredo</option>
+                  <option value="Pesto">Pesto</option>
                 </select>
               </div>
             </div>
@@ -105,13 +105,41 @@
               </div>
             </div>
           </div>
-          <button type="submit" name="button">Place Order</button>
+          <button type="submit" name="button">Add Pizza to Order</button>
 
         </form>
       </div>
 
-      <div class="priceProduct">
-        <!-- Your Pizza will be $<span id="productPrice"></span> -->
+      <div class="confirmProduct">
+        <h3>Order Confirmation</h3>
+        <br>
+        <p>You have configured a <span id="configuredSize"></span>" <span id="configuredCrust"></span> Pizza, with <span id="configuredSauce"></span> sauce.</p>
+        <p>Your Pizza will have the following toppings:</p>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Meats</h3>
+            <ul id="configuredMeats"></ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Veggies</h3>
+            <ul id="configuredVeggies"></ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Cheeses</h3>
+            <ul id="configuredCheeses"></ul>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <br>
+        <br>
+        Your Pizza will be $<span id="configuredPrice"></span>
       </div>
 
       <div class="checkoutProduct">

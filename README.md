@@ -12,11 +12,11 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 | Rank  | Behavior  | Input  | Output |
 |---|---|---|---|
 |1| display pizza options to make choices from  | checkboxes & selectors  | nothing  |
-|2| add to cart  |   |   |
+|2| Place order  |   |   |
 |3| calculate price |   |   |
 |4| add favicon of pizza slice |   |   |
-||  |   |   |
-||  |   |   |
+|| prevent place order until data selected |   |   |
+|| provide confirmation of order |   |   |
 ||  |   |   |
 ||  |   |   |
 ||  |   |   |
