@@ -4,7 +4,7 @@
 // =
 // ============================================
 //Variables with Global Scope
- var newPizza;
+var newPizza;
 
 //Pizza Constructor
 function Pizza(size, crust, sauce, meats, veggies, cheeses, toppingsCount) {
@@ -57,8 +57,8 @@ function createPizza() {
     $("ul#configuredCheeses").append("<li>" + cheese + "</li>");
   })
 
-    $(".configureProduct").hide();
-    $(".confirmProduct").show();
+  $(".configureProduct").hide();
+  $(".confirmProduct").show();
 
 }
 
@@ -73,7 +73,7 @@ Pizza.prototype.costing = function() {
 
   if (this.toppingsCount <= 3) {
     toppingsCharge = 0;
-  } else if (this.toppingsCount >3) {
+  } else if (this.toppingsCount > 3) {
     toppingsCharge = (this.toppingsCount - 3) * 1;
   }
 
@@ -89,7 +89,7 @@ Pizza.prototype.costing = function() {
   } else if (this.size > 10) {
     pizzaCost = (calculateCircleArea(this.size) / calculateCircleArea(10)) * subtotalCost
   }
-    $("#configuredPrice").text(pizzaCost + ", which seems cheap to me.");
+  $("#configuredPrice").text(pizzaCost + ", which seems cheap to me.");
 }
 
 

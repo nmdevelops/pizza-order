@@ -2,11 +2,72 @@
   display: inline-block;
 }
 
+h1 {
+  font-size: 36px;
+  font-family: 'Bangers', sans-serif;
+}
+
+h2 {
+  padding: 0px;
+  font-size: 28px;
+  font-family: 'Bangers', sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Bangers', sans-serif;
+}
+
+label, p, button, select {
+  font-size: 18px;
+  font-family: 'Pragati Narrow', sans-serif;
+}
+
 body {
   background-color: #e8edf3;
-  color: #22264b;
+  color: black;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  margin: 0px;
 }
 
 .confirmProduct {
   display: none;
+}
+
+.configure-container {
+  background-color: #F44336;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  color: black;
+}
+
+.header-container {
+  background-color: #111;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  color: #efefef;
+}
+
+.bg-image {
+  background-color: #efefef;
+  background-image: url(../img/pizza.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+button {
+  color: black;
+  background-color: #efefef;
+  border-style: none;
+  border-radius: 5px;
 }
